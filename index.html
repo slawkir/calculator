@@ -9,11 +9,12 @@
 </head>
 <body>
   <div id="app">
-    <div class="title">
-      <img src="./assets/img/logo_vuejs.png" alt="vue">
-      <h1>Calculator (Vue.js)</h1>
-    </div>
+    
     <div class="container">
+      <div class="title">
+        <img src="./assets/img/logo_vuejs.png" alt="vue">
+        <h1>Calculator (Vue.js)</h1>
+      </div>
       <input type="text" v-model="result">
       <div class="container-btn">
         <button class="cell num" v-for="num in numbers" v-on:click="input(num)">{{num}}</button>
