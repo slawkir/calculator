@@ -13,11 +13,21 @@
 }
 
 .container {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
   height: 300px;
   border: 2px solid orange;
 }
-
+.container-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+input {
+  height: 50px;
+}
 .cell {
-  
+  width: 33%;
+  height: 50px;
 }
