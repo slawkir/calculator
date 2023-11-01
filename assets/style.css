@@ -1,0 +1,87 @@
+@import url('https://fonts.cdnfonts.com/css/calculator');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+}
+h1 {
+  font-size: 14px;
+}
+.title > img {
+  /* display: block; */
+  width: 30px;
+  height: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 255px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(#f1b3b3, #83bcf5);
+  border-image-slice: 1;
+  padding: 5px;
+  background: lightcyan;
+  position: relative;
+}
+.container-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: space-around;
+}
+input {
+  height: 30px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 30px;
+  font-family: 'Calculator', sans-serif;
+}
+.cell {
+  width: 32%;
+  height: 30px;
+  border: none;
+}
+.cell:hover {
+  cursor: pointer;
+}
+
+.num {
+  background: #2a2828;
+  color: #c5dff7;
+}
+.num:hover {
+    background: #a7a1a1;
+    color: #053461;
+    font-size: 20px;
+    font-weight: bold;
+}
+.op {
+  background: #797070;
+  color: #fb877c;
+}
+.op:last-child {
+  width: 100%;
+}
+.op:hover {
+  background: #d2c4c4;
+  color: #f52f1d;
+  font-size: 20px;
+  font-weight: bold;
+}

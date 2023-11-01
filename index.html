@@ -5,17 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
   <div id="app">
+    <div class="title">
+      <img src="./assets/img/logo_vuejs.png" alt="vue">
+      <h1>Calculator (Vue.js)</h1>
+    </div>
     <div class="container">
       <input type="text" v-model="result">
       <div class="container-btn">
-        <button class="cell num" v-for="num in numbers">{{num}}</button>
+        <button class="cell num" v-for="num in numbers" v-on:click="input(num)">{{num}}</button>
+        <button class="cell op" v-for="op in operators" v-on:click="input(op)">{{op}}</button>
+        <button class="cell op" v-on:click="reset()">C</button>
+        <button class="cell op" v-on:click="calc()">=</button>
     </div>
   </div>
   <script src="https://unpkg.com/vue@next"></script>
-  <script src="./script.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
 </html>
